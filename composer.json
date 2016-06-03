@@ -1,29 +1,28 @@
 {
     "name": "agouticreative/laravel-mailcatcher",
-    license: "MIT",
-    type: "library",
-    keywords: ["mailcatcher","laravel","php"],
-    homepage: "https://github.com/agouticreative/laravel-mailcatcher",
-    authors: [
+    "license": "MIT",
+    "type": "library",
+    "keywords": ["mailcatcher","laravel","php"],
+    "homepage": "https://github.com/agouticreative/laravel-mailcatcher",
+    "authors": [
       {
         "name": "Travis Morrison",
         "email": "travismmorrison@gmail.com",
         "role": "developer"
       }],
-    support: {
+    "support": {
       "issues": "https://github.com/agouticreative/laravel-mailcatcher/issues"
     },
 
-    description: "A service provider for Alexandre Salome's PHP Mailcatcher SDK",
-    autoload: {
-          psr-4: {
+    "description": "A service provider for Alexandre Salome's PHP Mailcatcher SDK",
+    "autoload": {
+          "psr-4": {
               "Agouti\\LaravelMailcatcher\\": "vendor/agouticreative/laravel-mailcatcher/src"
           }
     },
-    require: {
-        php: ">=5.6",
-        alexandresalome/mailcatcher: "~1.1",
-        jenssegers/model: "~1.1"
-
-    },
+    "require": {
+        "php": ">=5.6",
+        "alexandresalome/mailcatcher": "~1.1",
+        "jenssegers/model": "~1.1"
+    }
 }
