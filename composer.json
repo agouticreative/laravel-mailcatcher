@@ -17,7 +17,7 @@
     "description": "A service provider for Alexandre Salome's PHP Mailcatcher SDK",
     "autoload": {
           "psr-4": {
-              "Agouti\\LaravelMailcatcher\\": "vendor/agouticreative/laravel-mailcatcher/src"
+              "Agouti\\LaravelMailcatcher\\": "src"
           }
     },
     "require": {
