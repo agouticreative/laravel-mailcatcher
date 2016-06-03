@@ -8,6 +8,8 @@ class Collection extends LaravelCollection
 {
     public function __construct($messages)
     {
+        $messageModels = [];
+
         foreach ($messages as $message) {
             $messageModels[] = new Model($message);
         }
@@ -18,6 +20,7 @@ class Collection extends LaravelCollection
     public function delete()
     {
         foreach ($this as $message) {
+            $message->delete();
         }
     }
 }
