@@ -2,7 +2,7 @@
 
 A Laravel service provider that returns the data on a Mailcatcher instance as an Eloquent collection of models.
 
-Most of the heavy lifting is done by Alexandre Salome's [Mailcatcher SDK for PHP](https://github.com/alexandresalome/mailcatcher)
+Most of the heavy lifting is done by [Mailcatcher SDK for PHP](https://github.com/alexandresalome/mailcatcher)
 
 ## Installation
 
@@ -15,7 +15,7 @@ Most of the heavy lifting is done by Alexandre Salome's [Mailcatcher SDK for PHP
 
 ## Usage
 
-Use Mailcatcher::search() to search the Mailcatcher instance for messages. Search takes an array of filtering arguments in the manner of the aforementioned Mailcatcher PHP SDK. Refer to that repo's instructions to learn more. A simple Mailcatcher::search() will return *all* messages on Mailcatcher.
+Use `Mailcatcher::search()` to search the Mailcatcher instance for messages. Search takes an array of filtering arguments in the manner of the aforementioned Mailcatcher PHP SDK. Refer to that repo's instructions to learn more. A simple `Mailcatcher::search()` will return *all* messages on Mailcatcher.
 
 The messages' models will have these attributes:
 
