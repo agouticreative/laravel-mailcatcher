@@ -18,7 +18,7 @@ class Client extends MailCatcherClient
 
     public function search(array $criterias = [], $limit = null)
     {
-        $messages = parent::search();
+        $messages = parent::search($criterias, $limit);
 
         return new Collection($messages);
     }
