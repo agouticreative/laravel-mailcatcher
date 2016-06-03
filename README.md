@@ -30,7 +30,7 @@ The messages' models will have these attributes:
 
 The original message object from the SDK is available as the *messageObject* property on the message model ($collection[0]->messageObject, for example)
 
-Both the model and the collection have a *delete* method that will delete messages on Mailcatcher. **delete on the collection completely lears out mailcatcher! be careful!**
+Both the model and the collection have a *delete* method that will delete messages on Mailcatcher. **delete on the collection completely clears out mailcatcher! be careful!**
 
 ### This is an alpha release
 
