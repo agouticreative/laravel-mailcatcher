@@ -20,8 +20,8 @@ Use `Mailcatcher::search()` to search the Mailcatcher instance for messages. Sea
 The messages' models will have these attributes:
 
 - id (integer)
-- sender (array)
-- recipients (array)
+- sender (array with *name* and *email* keys)
+- recipients (array of arrays with *name* and *email* keys)
 - subject (string)
 - content (string)
 - url (a URL for viewing the content of the message, like http://localhost:1080/messages/1.html. This is particuarly useful for PHPUnit or Selenium testing.)
