@@ -7,7 +7,7 @@ use Jenssegers\Model\Model as BaseModel;
 
 class Model extends BaseModel
 {
-    private $messageObject = false;
+    public $messageObject = false;
 
     protected $appends = ['url'];
 

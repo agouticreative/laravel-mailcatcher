@@ -7,8 +7,6 @@ use Alex\MailCatcher\Client as MailCatcherClient;
 
 class Client extends MailCatcherClient
 {
-    private $client = false;
-
     public function __construct()
     {
         $url = Config::get('mailcatcher.url');
