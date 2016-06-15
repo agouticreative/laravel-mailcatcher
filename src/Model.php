@@ -33,10 +33,12 @@ class Model extends BaseModel
         return $data;
     }
 
+
     public function __construct($message)
     {
         if (is_a($message, 'Agouti\LaravelMailcatcher\Model')) {
-            $data = $message->toArray();
+            //$data = $message->toArray();
+            return $message;
         } else {
             $data = $this->parseMessage($message);
         }
@@ -51,10 +53,14 @@ class Model extends BaseModel
         return $baseUrl.'/messages/'.$this->id.'.html';
     }
 
+    public function getRecipientsAttribute($value)
+    {
+        return collect($value);
+    }
+
     public function delete()
     {
         $this->messageObject->delete();
-
-        return parent::delete();
+        unset($this);
     }
 }
